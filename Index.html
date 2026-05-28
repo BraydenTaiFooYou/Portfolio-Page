@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="myinfo">
+           <div class="picture"><img src="Pic.jpg" width="170" height="222"></div>
+            <div>
+            <h1>Hello, I'm Brayden Tai Foo You</h1>
+            <h2 class="header">Student from BITE.</h2>
+            <h2 class="header">Welcome to my Portfolio.</h2>
+            </div>
+        </div>
+    </header>
+    
+    <div class="navigationBar">
+            <div class="navigation">
+                <button class="navigation-btn" data-target="contact">Personal Contact Detail</button>
+                <button class="navigation-btn" data-target="personal">Personal Qualities</button>
+                <button class="navigation-btn" data-target="academic">Academic History</button>
+                <button class="navigation-btn" data-target="produced">Work produced/created</button>
+            </div>
+        </div>
+    
+    <hr>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        
+        <div class="contact-icons">
+            <a href="mailto:braydentaifooyou@gmail.com" title="Email Me">
+                <i class="fa-solid fa-envelope"></i>
+            </a>
+            <a href="https://github.com/BraydenTaiFooYou" target="_blank" title="My GitHub">
+                <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="https://t.me/BraydenTai" target="_blank" title="Message me on Telegram">
+                <i class="fa-brands fa-telegram"></i>
+            </a>
+        </div>
+        <ul>
+            <li>Email: <a href="mailto:braydentaifooyou@gmail.com">braydentaifooyou@gmail.com</a></li>
+            <li>GitHub: <a href="https://github.com/BraydenTaiFooYou" target="_blank">BraydenTaiFooYou</a></li>
+            <li>Telegram: <a href="https://t.me/BraydenTai" target="_blank">@BraydenTai</a></li>
+
+        </ul>
+    </section>
+
+    <hr>
+
+    <section id="personal">
+        <h2>About Me</h2>
+        <p>I am a student study game technology in UTeM. Hobby is playing game. Hope to learn technical of entertainment with each other. Beside of that, I can approve in coding. Base on I am a person how like to be simple, the part I most like in coding is simplify the code. I also have the skill for using Blender like create a simple model.</p>
+        <h3>What I can do</h3>
+        <ul>
+            <li>Built a store management system using c++, php, SQL and connent to database worked porfuly.</li>
+            <li>Built a simple word-base game with using c++.</li>
+            <li>Built an endless-runner game in unity with a group member.</li>
+            <li>Create a low poly character model in Blender.</li>
+        </ul>
+        
+
+    </section>
+
+    <hr>
+
+    <section id="academic">
+        <h2>Academic History</h2>
+        <h3>Education</h3>
+        <ul>
+            <li><strong>Degree(2024-Now): </strong>University Teknikal Malaysia Melaka</li>
+            <li><Strong>STPM(2022-2024): </Strong>SMK Taman Johor Jaya 1</li>
+            <li><strong>SPM(2020-2022): </strong>SMK Taman Johor Jaya 1</li>
+            <li><strong>PT3(2017-2019): </strong>SMK Taman Johor Jaya 1</li>
+        </ul>
+        
+
+    </section>
+
+    
+
+    <hr>
+
+    <section id="produced">
+        <h2>Featured Projects</h2>
+
+        <article>
+            <div class="project-text">
+                <h3>2D Starship Game</h3>
+                <p><strong>Using:</strong> Processing</p>
+                <p>Developed a 2D space shooter featuring movement, shooting mechanics, meteor collisions, and a custom state management system to trigger a "MISSION FAILED" screen upon health depletion.</p>
+            </div>
+            <div class="project-image">
+                <img src="starship.png" alt="starship game preview" width="300" height="250">
+            </div>
+        </article>
+
+        <article>
+            <div class="project-text">
+                <h3>Store Management System</h3>
+                <p><strong>Using:</strong> SQL, PHP, C++</p>
+                <p>Developed a database system for manage store inventory. It display data by using C++.</p>
+            </div>
+            <div class="project-image">
+                <img src="inventory.png" alt="Word base game preview" width="300" height="250">
+            </div>
+        </article>
+
+        <article>
+            <div class="project-text">
+                <h3>Word-base Game</h3>
+                <p><strong>Using:</strong> C++</p>
+                <p>Create a word-base RPG game include inventory system, level up system and currency system. </p>
+            </div>
+            <div class="project-image">
+                <img src="wordbase.png" alt="Word base game preview" width="300" height="250">
+            </div>
+        </article>
+
+        <article>
+            <div class="project-text">
+                <h3>3D Modeling</h3>
+                <p><strong>Using:</strong> Blender</p>
+                <p>Produce 3D asset, character modeling by using Blender.</p>
+            </div>
+            <div class="project-image">
+                <img src="lowpoly.png" alt="Word base game preview" width="300" height="250">
+            </div>
+        </article>
+
+    </section>
+
+    <script>
+    const navLinks = document.querySelectorAll(".navigation-btn");
+
+    // 1. Make the buttons click to jump instantly to the section
+    navLinks.forEach(btn => {
+        btn.addEventListener("click", () => {
+            const targetId = btn.getAttribute("data-target");
+            document.getElementById(targetId).scrollIntoView();
+        });
+    });
+</script>
+</body>
+</html>
