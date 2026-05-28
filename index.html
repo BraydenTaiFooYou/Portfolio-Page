@@ -10,23 +10,23 @@
 <body>
     <header>
         <div class="myinfo">
-           <div class="picture"><img src="Pic.jpg" width="170" height="222"></div>
+            <a href="index.html" class="picture"><div><img src="Pic.jpg" width="170" height="222"></div></a>
             <div>
-            <h1>Hello, I'm Brayden Tai Foo You</h1>
-            <h2 class="header">Student from BITE.</h2>
-            <h2 class="header">Welcome to my Portfolio.</h2>
+                <h1>Hello, I'm Brayden Tai Foo You</h1>
+                <h2 class="header">Student from BITE.</h2>
+                <h2 class="header">Welcome to my Portfolio.</h2>
             </div>
         </div>
     </header>
-    
+
     <div class="navigationBar">
-            <div class="navigation">
-                <button class="navigation-btn" data-target="contact">Personal Contact Detail</button>
-                <button class="navigation-btn" data-target="personal">Personal Qualities</button>
-                <button class="navigation-btn" data-target="academic">Academic History</button>
-                <button class="navigation-btn" data-target="produced">Work produced/created</button>
-            </div>
+        <div class="navigation">
+            <a href="contact.html"><button class="navigation-btn" data-target="contact">Personal Contact Detail</button></a>
+            <a href="personal.html"><button class="navigation-btn" data-target="personal">Personal Qualities</button></a>
+            <a href="academic.html"><button class="navigation-btn" data-target="academic">Academic History</button></a>
+            <a href="produced.html"><button class="navigation-btn" data-target="produced">Work produced/created</button></a>
         </div>
+    </div>
     
     <hr>
 
@@ -45,9 +45,9 @@
             </a>
         </div>
         <ul>
-            <li>Email: <a href="mailto:braydentaifooyou@gmail.com">braydentaifooyou@gmail.com</a></li>
-            <li>GitHub: <a href="https://github.com/BraydenTaiFooYou" target="_blank">BraydenTaiFooYou</a></li>
-            <li>Telegram: <a href="https://t.me/BraydenTai" target="_blank">@BraydenTai</a></li>
+            <li class="contact">Email: <a href="mailto:braydentaifooyou@gmail.com">braydentaifooyou@gmail.com</a></li>
+            <li class="contact">GitHub: <a href="https://github.com/BraydenTaiFooYou" target="_blank">BraydenTaiFooYou</a></li>
+            <li class="contact">Telegram: <a href="https://t.me/BraydenTai" target="_blank">@BraydenTai</a></li>
 
         </ul>
     </section>
@@ -79,8 +79,6 @@
             <li><strong>SPM(2020-2022): </strong>SMK Taman Johor Jaya 1</li>
             <li><strong>PT3(2017-2019): </strong>SMK Taman Johor Jaya 1</li>
         </ul>
-        
-
     </section>
 
     
@@ -133,19 +131,6 @@
                 <img src="lowpoly.png" alt="Word base game preview" width="300" height="250">
             </div>
         </article>
-
     </section>
-
-    <script>
-    const navLinks = document.querySelectorAll(".navigation-btn");
-
-    // 1. Make the buttons click to jump instantly to the section
-    navLinks.forEach(btn => {
-        btn.addEventListener("click", () => {
-            const targetId = btn.getAttribute("data-target");
-            document.getElementById(targetId).scrollIntoView();
-        });
-    });
-</script>
 </body>
 </html>
