@@ -26,13 +26,15 @@ p{
     color: #457B9D;
     font-size: 20px;
 }
-li{
+li.contact{
     color: #1D3557;
     font-size: 17px;
 }
-.red{
-    color: #E63946;
+li{
+    color: #457B9D;
+    font-size: 17px;
 }
+
 
 
 
@@ -44,6 +46,9 @@ div.myinfo{
 .picture{
     margin: auto;
     margin-top: 10px;
+}
+.picture:hover{
+    transform: translateY(-3px);
 }
 
 div.navigationBar{
@@ -83,16 +88,22 @@ div.navigation button{
     color: #F1FAEE;
     transition: all 0.3s ease; 
     border: 2px solid #1D3557;
-    transform: translateY(-3px); 
+    transform: translateY(-3px);
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);               
 }
-.navigation-btn:focus {
+.navigation-btn-selected {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;          
+    border-radius: 5px;
     outline: none;
     border: 2px dashed #1D3557;
     background-color: #457B9D;
     color: #F1FAEE;
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
-
 
 section {
     max-width: 800px;
@@ -101,13 +112,13 @@ section {
 }
 
 a:link {
-    color: blue;
+    color: #457B9D;
 }
 a:visited {
-    color: blue;
+    color: #457B9D;
 }
 a:hover {
-    color: #457B9D;
+    color: #1D3557;
 }
 a:active {
     color: #E63946;
