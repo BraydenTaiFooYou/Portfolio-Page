@@ -40,7 +40,7 @@ li{
 
 div.myinfo{
     display: grid;
-    grid-template-columns: 25% 75%;
+    grid-template-columns: 20% 70% 10%;
     background-color: #F1FAEE;
 }
 .picture{
